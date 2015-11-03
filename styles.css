@@ -1,0 +1,116 @@
+h1,h2,h3,h4 {
+	font-family: sans-serif;
+	margin-bottom: 2px;
+	margin-top: 0;
+}
+
+h3 {
+	margin-top: 6px;
+}
+
+html {
+	margin: 0;
+}
+
+body {
+	text-align: center;
+	font-size: 1em;
+	margin: 0;
+}
+
+input {
+	margin-bottom: 1em;
+}
+
+form {
+	/*margin-bottom: 1em;*/
+	margin-top: 1em 
+}
+
+a {
+	margin: 0.5em;
+	color: #000000;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px;
+	width: 100%;
+}
+th.itemH {
+	width: 25%;		
+}
+th.countH {
+	width: 25%;		
+}
+th.restockH {
+	width: 25%;		
+}
+th.sellH {
+	width: 25%;		
+}
+
+td {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+input::-webkit-outer-spin-button, /* Removes arrows */
+input::-webkit-inner-spin-button, /* Removes arrows */
+input::-webkit-clear-button { /* Removes blue cross */
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+div.banner {
+	width: 100%;
+	background-color: #1E222D;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: fixed;
+	z-index: 10;
+}
+
+div.banner a {
+	color: white;
+}
+
+div.list-controls {
+	width: 40%;
+	height: 100vh;
+	background-color: #1E222D;
+	color: white;
+	float: left;
+	position: fixed;
+	z-index: 0;
+	display: block;
+}
+
+div.list {
+	width: 60%;
+	float: right;
+	display: block;
+}
+
+div#menu-button {
+	/*position: absolute;*/
+	float: left;
+	background-image: url('img/menuButton.png');
+	background-size: contain;
+	z-index: 20;
+	display: none;
+}
+
+@media screen and (max-width: 700px) {
+    div#menu-button {
+		display: block;
+	}
+	div.list-controls {
+		width: 100%;
+	}
+	div.list {
+		width: 100%;
+	}
+}
