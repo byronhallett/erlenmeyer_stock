@@ -2,7 +2,7 @@
 $(document).ready(function() { 
 
   $('#new_user').ajaxForm(function() { 
-    // //Trigger a restock action in the database
+    // create a new user from the admin panel
     $.ajax({
        type: "POST",
        url: "./server/new_user.php",
@@ -18,7 +18,25 @@ $(document).ready(function() {
   });
 
   $('#login').ajaxForm(function() { 
-    // //Trigger a restock action in the database
+    // Log users in
+    $.ajax({
+       type: "POST",
+       url: "./server/login_auth.php",
+       data: $('#login').serialize(),
+       success: function(data)
+       {  
+          if (jQuery.trim(data).indexOf("success") <= -1) {
+            alert(data); // show response from the php script.
+          } else {
+            // alert("success");
+            location.reload();
+          }
+        }
+    });
+  });
+
+  $('#item_price').ajaxForm(function() { 
+    // Log users in
     $.ajax({
        type: "POST",
        url: "./server/login_auth.php",
