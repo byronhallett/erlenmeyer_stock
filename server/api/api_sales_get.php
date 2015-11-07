@@ -28,7 +28,7 @@ $dateTo   = $data['date_end'];
 $userId   = $data['user_id'];
 
 // prepare query
-$sql = "SELECT s.sale_id, i.item_name, i.price, i.cost, c.category_name, s.sale_count, s.sale_date
+$sql = "SELECT s.sale_id, i.item_id, i.item_name, i.price, i.cost, c.category_name, s.sale_count, s.sale_date
         FROM sale s
           inner join items i on s.item_id = i.item_id
           inner join categories c on i.category_id = c.category_id
