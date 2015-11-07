@@ -44,11 +44,17 @@ th.itemH {
 th.countH {
 	width: 25%;		
 }
+th.priceH {
+	width: 13%;		
+}
+th.costH {
+	width: 13%;		
+}
 th.restockH {
-	width: 25%;		
+	width: 12%;		
 }
 th.sellH {
-	width: 25%;		
+	width: 12%;		
 }
 
 td {

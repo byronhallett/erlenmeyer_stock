@@ -2,7 +2,7 @@
 $(document).ready(function() { 
 
   $('#new_user').ajaxForm(function() { 
-    // //Trigger a restock action in the database
+    // create a new user from the admin panel
     $.ajax({
        type: "POST",
        url: "./server/new_user.php",
@@ -18,7 +18,7 @@ $(document).ready(function() {
   });
 
   $('#login').ajaxForm(function() { 
-    // //Trigger a restock action in the database
+    // Log users in
     $.ajax({
        type: "POST",
        url: "./server/login_auth.php",
@@ -29,6 +29,38 @@ $(document).ready(function() {
             alert(data); // show response from the php script.
           } else {
             // alert("success");
+            location.reload();
+          }
+        }
+    });
+  });
+
+  // Update the price using a small sql update request
+  $('#item-price').ajaxForm(function() { 
+    $.ajax({
+       type: "POST",
+       url: "./server/item_price.php",
+       data: $('#item-price').serialize(),
+       success: function(data)
+       {
+          if (jQuery.trim(data) != "") {
+            alert(data); // show response from the php script.
+            location.reload();
+          }
+        }
+    });
+  });
+
+  // Update the cost using a small sql update request
+  $('#item-cost').ajaxForm(function() { 
+    $.ajax({
+       type: "POST",
+       url: "./server/item_cost.php",
+       data: $('#item-cost').serialize(),
+       success: function(data)
+       {
+          if (jQuery.trim(data) != "") {
+            alert(data); // show response from the php script.
             location.reload();
           }
         }
