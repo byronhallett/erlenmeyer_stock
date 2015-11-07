@@ -67,7 +67,7 @@ for ($i = 0; $i < sizeof($itemArray['item_id']); $i++) {
         ".$itemArray[item_name][$i]." - ".$itemArray[category_name][$i]."</option>";
 }
 echo "</select> to
-        <input type='text' name='price-box'>
+        <input type='text' name='price-value'>
         <input type='submit' value='Set' tabindex=-1>
       </form>";
 //END edit item price form
@@ -80,10 +80,10 @@ for ($i = 0; $i < sizeof($itemArray['item_id']); $i++) {
         ".$itemArray[item_name][$i]." - ".$itemArray[category_name][$i]."</option>";
 }
 echo "</select> to
-        <input type='text' name='cost-box'>
+        <input type='text' name='cost-value'>
         <input type='submit' value='Set' tabindex=-1>
       </form>";
-//END edit cost price form
+//END edit item cost form
 
 //Remove item form:
 echo "<form id='rem-item' action='index.php' method='post' accept-charset='utf-8'>
