@@ -35,28 +35,12 @@ $(document).ready(function() {
     });
   });
 
-  // Update the price using a small sql update request
-  $('#item-price').ajaxForm(function() { 
+  // Update the price and cost
+  $('#item-price-cost').ajaxForm(function() { 
     $.ajax({
        type: "POST",
-       url: "./server/item_price.php",
-       data: $('#item-price').serialize(),
-       success: function(data)
-       {
-          if (jQuery.trim(data) != "") {
-            alert(data); // show response from the php script.
-            location.reload();
-          }
-        }
-    });
-  });
-
-  // Update the cost using a small sql update request
-  $('#item-cost').ajaxForm(function() { 
-    $.ajax({
-       type: "POST",
-       url: "./server/item_cost.php",
-       data: $('#item-cost').serialize(),
+       url: "./server/item_price_cost.php",
+       data: $('#item-price-cost').serialize(),
        success: function(data)
        {
           if (jQuery.trim(data) != "") {
