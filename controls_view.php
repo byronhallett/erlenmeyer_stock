@@ -59,31 +59,21 @@ echo "</select>
       </form>";
 //END new item form
 
-//Edit item price form:
-echo "<form id='item-price' action='index.php' method='post' accept-charset='utf-8'>
-      Set price of: <select name='item-id'>";
+//Edit item price and cost form:
+echo "<form id='item-price-cost' action='index.php' method='post' accept-charset='utf-8'>
+      For item: <select name='item-id'>";
 for ($i = 0; $i < sizeof($itemArray['item_id']); $i++) {
 	echo "<option value=".$itemArray['item_id'][$i].">
         ".$itemArray[item_name][$i]." - ".$itemArray[category_name][$i]."</option>";
 }
-echo "</select> to
-        <input type='text' name='price-value'>
-        <input type='submit' value='Set' tabindex=-1>
-      </form>";
-//END edit item price form
-
-//Edit item cost form:
-echo "<form id='item-cost' action='index.php' method='post' accept-charset='utf-8'>
-      Set cost of: <select name='item-id'>";
-for ($i = 0; $i < sizeof($itemArray['item_id']); $i++) {
-	echo "<option value=".$itemArray['item_id'][$i].">
-        ".$itemArray[item_name][$i]." - ".$itemArray[category_name][$i]."</option>";
-}
-echo "</select> to
+echo "</select>, set:<br>
+        price to:
+        <input type='text' name='price-value'><br>
+        cost to:
         <input type='text' name='cost-value'>
         <input type='submit' value='Set' tabindex=-1>
       </form>";
-//END edit item cost form
+//END edit item price and cost form
 
 //Remove item form:
 echo "<form id='rem-item' action='index.php' method='post' accept-charset='utf-8'>
