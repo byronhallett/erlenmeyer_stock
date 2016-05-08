@@ -1,14 +1,14 @@
-// wait for the DOM to be loaded 
-$(document).ready(function() { 
+// wait for the DOM to be loaded
+$(document).ready(function() {
 
-  $('#new_user').ajaxForm(function() { 
+  $('#new_user').ajaxForm(function() {
     // create a new user from the admin panel
     $.ajax({
        type: "POST",
        url: "./server/new_user.php",
        data: $('#new_user').serialize(),
        success: function(data)
-       {  
+       {
           if (jQuery.trim(data) != "") {
             alert(data); // show response from the php script.
             location.reload();
@@ -17,14 +17,14 @@ $(document).ready(function() {
     });
   });
 
-  $('#login').ajaxForm(function() { 
+  $('#login').ajaxForm(function() {
     // Log users in
     $.ajax({
        type: "POST",
        url: "./server/login_auth.php",
        data: $('#login').serialize(),
        success: function(data)
-       {  
+       {
           if (jQuery.trim(data).indexOf("success") <= -1) {
             alert(data); // show response from the php script.
           } else {
@@ -36,7 +36,7 @@ $(document).ready(function() {
   });
 
   // Update the price and cost
-  $('#item-price-cost').ajaxForm(function() { 
+  $('#item-price-cost').ajaxForm(function() {
     $.ajax({
        type: "POST",
        url: "./server/item_price_cost.php",
@@ -51,8 +51,8 @@ $(document).ready(function() {
     });
   });
 
-  // bind 'myForm' and provide a simple callback function 
-  $('#move-cat').ajaxForm(function() { 
+  // bind 'myForm' and provide a simple callback function
+  $('#move-cat').ajaxForm(function() {
     $.ajax({
        type: "POST",
        url: "./server/re_cat.php",
@@ -64,11 +64,11 @@ $(document).ready(function() {
               location.reload(); //Since this will require rebuilding of the table, reload
             }
        }
-    }); 
+    });
   });
 
-  // bind 'myForm' and provide a simple callback function 
-  $('#new-cat').ajaxForm(function() { 
+  // bind 'myForm' and provide a simple callback function
+  $('#new-cat').ajaxForm(function() {
 		$.ajax({
        type: "POST",
        url: "./server/new_cat.php",
@@ -80,10 +80,10 @@ $(document).ready(function() {
               location.reload(); //Since this will require rebuilding of the table, reload
             }
        }
-    });	
+    });
   });
 
-  $('#new-item').ajaxForm(function() { 
+  $('#new-item').ajaxForm(function() {
    	$.ajax({
   	   type: "POST",
        url: "./server/new_item.php",
@@ -95,10 +95,10 @@ $(document).ready(function() {
               location.reload(); //Since this will require rebuilding of the table, reload
             }
        }
-    });	
+    });
   });
 
-  $('#rem-item').ajaxForm(function() { 
+  $('#rem-item').ajaxForm(function() {
   	$.ajax({
        type: "POST",
        url: "./server/rem_item.php",
@@ -110,10 +110,10 @@ $(document).ready(function() {
               location.reload(); //Since this will require rebuilding of the table, reload
             }
        }
-    });	
+    });
   });
 
-  $('#rem-cat').ajaxForm(function() { 
+  $('#rem-cat').ajaxForm(function() {
   	$.ajax({
        type: "POST",
        url: "./server/rem_cat.php",
@@ -125,7 +125,7 @@ $(document).ready(function() {
               location.reload(); //Since this will require rebuilding of the table, reload
             }
        }
-    });	
+    });
   });
 
   window.SellButton = function (itemId) {
@@ -144,7 +144,7 @@ $(document).ready(function() {
              alert(data); // show response from the php script.
             }
          }
-      }); 
+      });
       //Update front end quickly, assuming that server changes were succesful
       var cellId = "count-id" + itemId;
       var previousInt = parseInt(document.getElementById(cellId).innerHTML);
@@ -154,7 +154,7 @@ $(document).ready(function() {
 
   window.RestockButton = function (itemId) {
   	//Collects user input about restock volume
-  	var restock = parseInt (prompt("How many bought?",1)); 
+  	var restock = parseInt (prompt("How many bought?",1));
     if (restock > 0) {
     	//Trigger a restock action in the database
     	$.ajax({
@@ -175,4 +175,4 @@ $(document).ready(function() {
     	document.getElementById(cellId).innerHTML = previousInt + restock;
     }
   }
-}); 
+});

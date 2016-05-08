@@ -96,8 +96,15 @@ echo "<form id='export' action='export.php' method='post' accept-charset='utf-8'
         <input type='hidden' name='user-id' value='".$_SESSION['user_id']."'>
         Export From: <input type='date' name='date-from' value='".$lastMonth."' placeholder=''>
         Until: <input type='date' name='date-to' value='".$today."' placeholder=''>
-        <input type='submit' value='EXPORT' tabindex=-1>
+        <input type='submit' value='Export' tabindex=-1>
       </form>";
 //END export form
+
+//Export levels form:
+echo "<form id='export_levels' action='export_current.php' method='post' accept-charset='utf-8'>
+        <input type='hidden' name='user-id' value='".$_SESSION['user_id']."'>
+        <input type='submit' value='Export Current Stock Levels' tabindex=-1>
+      </form>";
+//END export levels form
 echo "</div>";
 ?>

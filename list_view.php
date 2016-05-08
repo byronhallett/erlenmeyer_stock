@@ -68,7 +68,6 @@ if ($categories->num_rows > 0) {
 			array_push($itemArray['item_name'], $item["item_name"]);
 			array_push($itemArray['category_name'], $cat["category_name"]);
 
-			//TODO: Lookup items buy and sells to learn current stock
 			$currentStock = 0;
 			$sql          = "SELECT * FROM sale
 							WHERE item_id = '$item[item_id]'";
