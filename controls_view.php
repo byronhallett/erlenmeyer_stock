@@ -63,8 +63,12 @@ echo "</select>
 echo "<form id='item-price-cost' action='index.php' method='post' accept-charset='utf-8'>
       For item: <select name='item-id'>";
 for ($i = 0; $i < sizeof($itemArray['item_id']); $i++) {
-	echo "<option value=".$itemArray['item_id'][$i].">
+	echo "<option value=item|".$itemArray['item_id'][$i].">
         ".$itemArray[item_name][$i]." - ".$itemArray[category_name][$i]."</option>";
+}
+for ($i = 0; $i < sizeof($categoryArray['category_id']); $i++) {
+	echo "<option value=category|".$categoryArray['category_id'][$i].">
+        ".$categoryArray['category_name'][$i]." - Whole category!!</option>";
 }
 echo "</select>, set:<br>
         price to:

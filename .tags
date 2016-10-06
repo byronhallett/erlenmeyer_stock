@@ -1,0 +1,195 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CalcHeights	styles.js	/^function CalcHeights () {$/;"	f
+SetDisplays	styles.js	/^function SetDisplays (targetDiv) {$/;"	f
+addToSetValue	server/item_price_cost.php	/^function addToSetValue($setValue, $columnName, $value) {$/;"	f
+assetValue	export_current.php	/^  $assetValue = $item['cost'] * $currentStock;$/;"	v
+beforeAfter	server/re_cat.php	/^$beforeAfter = $_POST['before-after'];$/;"	v
+beforeAfterAlt	server/re_cat.php	/^	$beforeAfterAlt = -5;$/;"	v
+beforeAfterAlt	server/re_cat.php	/^	$beforeAfterAlt = 5;$/;"	v
+catId	server/new_item.php	/^	$catId = htmlspecialchars($_POST['item-cat'], ENT_QUOTES);$/;"	v
+catId	server/new_item.php	/^	if ($newItem == "" || $catId == "") {$/;"	v
+categories	list_view.php	/^$categories = mysqli_query($conn, $sql);$/;"	v
+categories	server/api/api_category_auth.php	/^$categories = mysqli_query($conn,$sql);$/;"	v
+categoryArray	list_view.php	/^$categoryArray = array($/;"	v
+confirm_downloads	sftp-config-ocean.json	/^    "confirm_downloads": false,$/;"	f
+confirm_downloads	sftp-config.json	/^    "confirm_downloads": false,$/;"	f
+confirm_overwrite_newer	sftp-config-ocean.json	/^    "confirm_overwrite_newer": false,$/;"	f
+confirm_overwrite_newer	sftp-config.json	/^    "confirm_overwrite_newer": false,$/;"	f
+confirm_sync	sftp-config-ocean.json	/^    "confirm_sync": true,$/;"	f
+confirm_sync	sftp-config.json	/^    "confirm_sync": true,$/;"	f
+conn	edit_user.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	export.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	export_current.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	list_view.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	server/api/api_category_auth.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	server/api/api_login_auth.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	server/api/api_sales_get.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	server/api/api_sell.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	server/api/api_undo_sell.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	server/item_price_cost.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	server/login_auth.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	server/new_cat.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	server/new_item.php	/^	$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	server/new_user.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	server/re_cat.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	server/refreshCatOrder.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	server/rem_cat.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	server/rem_item.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	server/rem_user.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	server/restock.php	/^	$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+conn	server/sell.php	/^	$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
+connect_timeout	sftp-config-ocean.json	/^    "connect_timeout": 30,$/;"	f
+connect_timeout	sftp-config.json	/^    "connect_timeout": 30,$/;"	f
+currentStock	export_current.php	/^  $currentStock = 0;$/;"	v
+currentStock	list_view.php	/^			$currentStock = 0;$/;"	v
+currentStock	server/api/api_category_auth.php	/^      $currentStock = 0;$/;"	v
+data	server/api/api_category_auth.php	/^$data = json_decode(file_get_contents('php:\/\/input'), true);$/;"	v
+data	server/api/api_login_auth.php	/^$data = json_decode(file_get_contents('php:\/\/input'), true);$/;"	v
+data	server/api/api_sales_get.php	/^$data = json_decode(file_get_contents('php:\/\/input'), true);$/;"	v
+data	server/api/api_sell.php	/^$data = json_decode(file_get_contents('php:\/\/input'), true);$/;"	v
+data	server/api/api_undo_sell.php	/^$data = json_decode(file_get_contents('php:\/\/input'), true);$/;"	v
+dateFrom	export.php	/^$dateFrom = date('Y-m-d H:i:s',strtotime($_POST['date-from']));$/;"	v
+dateFrom	server/api/api_sales_get.php	/^$dateFrom = $data['date_start'];$/;"	v
+dateTo	export.php	/^$dateTo = date('Y-m-d H:i:s',strtotime($_POST['date-to']."24:00:00"));$/;"	v
+dateTo	export.php	/^if ($dateFrom == "" || $dateTo == "") {$/;"	v
+dateTo	server/api/api_sales_get.php	/^$dateTo   = $data['date_end'];$/;"	v
+dbname	server/credentials.cfg.php	/^$dbname = "erlenmeyer";$/;"	v
+host	sftp-config-ocean.json	/^    "host": "128.199.201.219",$/;"	f
+host	sftp-config.json	/^    "host": "erlenmeyer.com.au",$/;"	f
+ignore_regexes	sftp-config-ocean.json	/^    "ignore_regexes": [$/;"	f
+ignore_regexes	sftp-config.json	/^    "ignore_regexes": [$/;"	f
+itemArray	list_view.php	/^$itemArray = array($/;"	v
+itemCost	server/item_price_cost.php	/^$itemCost  = $_POST['cost-value'];$/;"	v
+itemId	server/item_price_cost.php	/^$itemId    = $_POST['item-id'];$/;"	v
+itemId	server/item_price_cost.php	/^$itemId = $splitted[1];$/;"	v
+itemOrCat	server/item_price_cost.php	/^$itemOrCat = $splitted[0];$/;"	v
+itemPrice	server/item_price_cost.php	/^$itemPrice = $_POST['price-value'];$/;"	v
+item_id	server/api/api_sell.php	/^$item_id = $data['item_id'];$/;"	v
+item_id	server/api/api_undo_sell.php	/^$item_id = $data['item_id'];$/;"	v
+item_id	server/restock.php	/^	$item_id = $_POST['item_id'];$/;"	v
+item_id	server/sell.php	/^	$item_id = $_POST['item_id'];$/;"	v
+items	export_current.php	/^$items = mysqli_query($conn, $sql);$/;"	v
+items	list_view.php	/^		$items = mysqli_query($conn, $sql);$/;"	v
+items	server/api/api_category_auth.php	/^    $items = mysqli_query($conn,$sql);$/;"	v
+jsonReturn	server/api/api_category_auth.php	/^  $jsonReturn = json_encode($returnData);$/;"	v
+jsonReturn	server/api/api_login_auth.php	/^	$jsonReturn = json_encode($returnData);$/;"	v
+jsonReturn	server/api/api_sales_get.php	/^	$jsonReturn = json_encode($salesData);$/;"	v
+lastMonth	controls_view.php	/^$lastMonth = date('Y-m-d', mktime(0, 0, 0, date('m'), 1, date('Y')));$/;"	v
+loginResult	server/api/api_login_auth.php	/^$loginResult = mysqli_query($conn,$sql);$/;"	v
+loginResult	server/login_auth.php	/^$loginResult = mysqli_query($conn,$sql);$/;"	v
+moveCat	server/re_cat.php	/^$moveCat = $_POST['move-cat'];$/;"	v
+moveReferenceId	server/re_cat.php	/^	$moveReferenceId = $sqlToCat['ordering'];$/;"	v
+newCat	server/new_cat.php	/^$newCat = htmlspecialchars($_POST['cat-box'], ENT_QUOTES);$/;"	v
+newItem	server/new_item.php	/^	$newItem = htmlspecialchars($_POST['item'], ENT_QUOTES);$/;"	v
+nextOrder	server/re_cat.php	/^$nextOrder = $moveReferenceId + $beforeAfterAlt;$/;"	v
+output	export.php	/^$output = fopen('php:\/\/output', 'w');$/;"	v
+output	export_current.php	/^$output = fopen('php:\/\/output', 'w');$/;"	v
+pass	server/new_user.php	/^$pass = htmlspecialchars($_POST['password'], ENT_QUOTES);$/;"	v
+pass	server/new_user.php	/^if ($user == "" || $pass == "") {$/;"	v
+password	server/api/api_login_auth.php	/^$password = $data['password'];$/;"	v
+password	server/api/api_login_auth.php	/^if ($username == "" || $password == "") {$/;"	v
+password	server/credentials.cfg.php	/^$password = "";$/;"	v
+password	server/login_auth.php	/^$password = $_POST['password'];$/;"	v
+password	server/login_auth.php	/^if ($username == "" || $password == "") {$/;"	v
+password	sftp-config.json	/^    "password": "katika10",$/;"	f
+queryData	server/api/api_sales_get.php	/^$queryData = mysqli_query($conn, $sql);$/;"	v
+remCat	server/rem_cat.php	/^$remCat = $_POST['cat-id'];$/;"	v
+remCat	server/rem_user.php	/^$remCat = $_POST['cat-id'];$/;"	v
+remItem	server/rem_item.php	/^$remItem = $_POST['item-id'];$/;"	v
+remote_path	sftp-config-ocean.json	/^    "remote_path": "\/www",$/;"	f
+remote_path	sftp-config.json	/^    "remote_path": "\/stock.erlenmeyer.com.au\/",$/;"	f
+restock	export.php	/^$restock = mysqli_query($conn,$sql);$/;"	v
+restock	server/restock.php	/^	$restock = $_POST['restockAmount'];$/;"	v
+restocks	export_current.php	/^  $restocks = mysqli_query($conn, $sql);$/;"	v
+restocks	list_view.php	/^			$restocks = mysqli_query($conn, $sql);$/;"	v
+restocks	server/api/api_category_auth.php	/^      $restocks = mysqli_query($conn,$sql);$/;"	v
+returnData	server/api/api_category_auth.php	/^$returnData = array ($/;"	v
+returnData	server/api/api_login_auth.php	/^		$returnData = array($/;"	v
+returnData	server/api/api_login_auth.php	/^	$returnData = array($/;"	v
+sales	export.php	/^$sales = mysqli_query($conn,$sql);$/;"	v
+sales	export_current.php	/^  $sales = mysqli_query($conn, $sql);$/;"	v
+sales	list_view.php	/^			$sales = mysqli_query($conn, $sql);$/;"	v
+sales	server/api/api_category_auth.php	/^      $sales = mysqli_query($conn,$sql);$/;"	v
+sales	server/new_cat.php	/^\/\/ $sales = mysqli_query($conn,$sql);$/;"	v
+salesData	server/api/api_sales_get.php	/^$salesData = array();$/;"	v
+save_before_upload	sftp-config-ocean.json	/^    "save_before_upload": true,$/;"	f
+save_before_upload	sftp-config.json	/^    "save_before_upload": true,$/;"	f
+sell	server/api/api_sell.php	/^$sell = $data['sell_amount'];$/;"	v
+sell	server/api/api_undo_sell.php	/^$sell = $undoItem['sale_count'];$/;"	v
+sell	server/sell.php	/^	$sell = $_POST['sellAmount'];$/;"	v
+servername	server/credentials.cfg.php	/^$servername = "localhost:3306";$/;"	v
+setValue	server/item_price_cost.php	/^		$setValue = $setValue.", ";$/;"	v
+setValue	server/item_price_cost.php	/^		$setValue = $setValue."SET ";$/;"	v
+setValue	server/item_price_cost.php	/^	$setValue = $setValue.$columnName." = ".$value;$/;"	v
+splitted	server/item_price_cost.php	/^$splitted = explode("|", $itemId, 2);$/;"	v
+sql	edit_user.php	/^\/\/ $sql = "SELECT * $/;"	v
+sql	export.php	/^$sql = "SELECT r.restock_id, i.item_name, c.category_name, r.restock_count, i.price, i.cost, r.restock_date$/;"	v
+sql	export.php	/^$sql = "SELECT s.sale_id, i.item_name, c.category_name, s.sale_count, i.price, i.cost ,s.sale_date$/;"	v
+sql	export_current.php	/^  $sql = "SELECT * FROM restock$/;"	v
+sql	export_current.php	/^  $sql = "SELECT * FROM sale$/;"	v
+sql	export_current.php	/^$sql = "SELECT i.item_id, i.item_name, c.category_name, i.price, i.cost$/;"	v
+sql	list_view.php	/^			$sql          = "SELECT * FROM sale$/;"	v
+sql	list_view.php	/^			$sql = "SELECT * FROM restock$/;"	v
+sql	list_view.php	/^		$sql = "SELECT *$/;"	v
+sql	list_view.php	/^$sql = "SELECT *$/;"	v
+sql	server/api/api_category_auth.php	/^      $sql = "SELECT * FROM restock $/;"	v
+sql	server/api/api_category_auth.php	/^      $sql = "SELECT * FROM sale $/;"	v
+sql	server/api/api_category_auth.php	/^    $sql = "SELECT * $/;"	v
+sql	server/api/api_category_auth.php	/^$sql = "SELECT * $/;"	v
+sql	server/api/api_login_auth.php	/^$sql = "SELECT * $/;"	v
+sql	server/api/api_sales_get.php	/^$sql = "SELECT s.sale_id, i.item_id, i.item_name, i.price, i.cost, c.category_name, s.sale_count, s.sale_date$/;"	v
+sql	server/api/api_sell.php	/^$sql = "INSERT INTO sale (`item_id`,`sale_count`) VALUES ('$item_id','$sell')";$/;"	v
+sql	server/api/api_undo_sell.php	/^$sql = "SELECT *$/;"	v
+sql	server/item_price_cost.php	/^	$sql = "UPDATE items$/;"	v
+sql	server/login_auth.php	/^$sql = "SELECT * $/;"	v
+sql	server/new_cat.php	/^$sql = "INSERT INTO categories (`category_name`,`created_by`) VALUES ('$newCat','$userId')";$/;"	v
+sql	server/new_cat.php	/^\/\/ $sql = "SELECT$/;"	v
+sql	server/new_item.php	/^	$sql = "INSERT INTO items (`category_id`,`item_name`) VALUES ('$catId','$newItem')";$/;"	v
+sql	server/new_user.php	/^$sql = "INSERT INTO users (`username`,`password`) VALUES ('$user','$pass')";$/;"	v
+sql	server/re_cat.php	/^$sql = "SELECT *$/;"	v
+sql	server/re_cat.php	/^$sql = "UPDATE categories $/;"	v
+sql	server/refreshCatOrder.php	/^$sql="SET @ordering_inc = 10;$/;"	v
+sql	server/rem_cat.php	/^$sql = "DELETE $/;"	v
+sql	server/rem_item.php	/^  $sql = "DELETE$/;"	v
+sql	server/rem_item.php	/^$sql = "DELETE s, r$/;"	v
+sql	server/rem_user.php	/^$sql = "DELETE $/;"	v
+sql	server/restock.php	/^	$sql = "INSERT INTO restock (`item_id`,`restock_count`) VALUES ('$item_id','$restock')";$/;"	v
+sql	server/sell.php	/^	$sql = "INSERT INTO sale (`item_id`,`sale_count`) VALUES ('$item_id','$sell')";$/;"	v
+sqlDelete	server/api/api_undo_sell.php	/^$sqlDelete = "DELETE $/;"	v
+sqlToCats	server/re_cat.php	/^$sqlToCats = mysqli_query($conn,$sql);$/;"	v
+ssh_key_file	sftp-config-ocean.json	/^    "ssh_key_file": "~\/mainDrop",$/;"	f
+sync_down_on_open	sftp-config-ocean.json	/^    "sync_down_on_open": false,$/;"	f
+sync_down_on_open	sftp-config.json	/^    "sync_down_on_open": false,$/;"	f
+sync_same_age	sftp-config-ocean.json	/^    "sync_same_age": true,$/;"	f
+sync_same_age	sftp-config.json	/^    "sync_same_age": true,$/;"	f
+sync_skip_deletes	sftp-config-ocean.json	/^    "sync_skip_deletes": false,$/;"	f
+sync_skip_deletes	sftp-config.json	/^    "sync_skip_deletes": false,$/;"	f
+thisSale	server/api/api_sales_get.php	/^		$thisSale = array($/;"	v
+toCat	server/re_cat.php	/^$toCat = $_POST['to-cat'];$/;"	v
+toCat	server/re_cat.php	/^if ($moveCat == "" || $toCat == "") {$/;"	v
+today	controls_view.php	/^$today     = date('Y-m-d');$/;"	v
+type	sftp-config-ocean.json	/^    "type": "sftp",$/;"	f
+type	sftp-config.json	/^    "type": "ftp",$/;"	f
+undoItem	server/api/api_undo_sell.php	/^$undoItem = mysqli_fetch_assoc(mysqli_query($conn,$sql));$/;"	v
+upload_on_save	sftp-config-ocean.json	/^    "upload_on_save": false,$/;"	f
+upload_on_save	sftp-config.json	/^    "upload_on_save": false,$/;"	f
+user	server/new_user.php	/^$user = htmlspecialchars($_POST['username'], ENT_QUOTES);$/;"	v
+user	sftp-config-ocean.json	/^    "user": "root",$/;"	f
+user	sftp-config.json	/^    "user": "byronhallett_erlenmeyer.com.au",$/;"	f
+userId	export.php	/^$userId = $_POST['user-id'];$/;"	v
+userId	export_current.php	/^$userId = $_POST['user-id'];$/;"	v
+userId	server/api/api_sales_get.php	/^$userId   = $data['user_id'];$/;"	v
+userId	server/new_cat.php	/^$userId = htmlspecialchars($_POST['user-id'], ENT_QUOTES);$/;"	v
+username	server/api/api_login_auth.php	/^$username = $data['username'];$/;"	v
+username	server/credentials.cfg.php	/^$username = "root";$/;"	v
+username	server/login_auth.php	/^$username = $_POST['username'];$/;"	v
+users	edit_user.php	/^\/\/ $users = mysqli_query($conn,$sql);$/;"	v
+valuesToChange	server/item_price_cost.php	/^	$valuesToChange = addToSetValue($valuesToChange, "cost", $itemCost);$/;"	v
+valuesToChange	server/item_price_cost.php	/^	$valuesToChange = addToSetValue($valuesToChange, "price", $itemPrice);$/;"	v
+valuesToChange	server/item_price_cost.php	/^$valuesToChange = "";$/;"	v
+valuesToChange	server/item_price_cost.php	/^if ($itemId == "" || $valuesToChange == "") {$/;"	v

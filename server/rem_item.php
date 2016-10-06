@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 //Grab database credentials
 include 'credentials.cfg.php';
@@ -8,9 +8,9 @@ include 'credentials.cfg.php';
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
-	
+
 	die("Connection failed: " . $conn->connect_error);
-} 
+}
 //Retrieving ajax posted data
 $remItem = $_POST['item-id'];
 
@@ -28,7 +28,7 @@ $sql = "DELETE s, r
 if (!mysqli_query($conn, $sql)) {
    echo "Error deleting record: " . mysqli_error($conn);
 } else {
-  $sql = "DELETE 
+  $sql = "DELETE
 				FROM items
 				WHERE item_id = '$remItem'";
 	if (!mysqli_query($conn, $sql)) {
@@ -43,4 +43,4 @@ if (!mysqli_query($conn, $sql)) {
 
 
 
-?> 
+?>

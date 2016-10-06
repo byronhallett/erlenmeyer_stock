@@ -25,6 +25,9 @@ if ($conn->connect_error) {
 
 //Retrieving ajax posted data
 $itemId    = $_POST['item-id'];
+$splitted = explode("|", $itemId, 2);
+$itemOrCat = $splitted[0];
+$itemId = $splitted[1];
 $itemPrice = $_POST['price-value'];
 $itemCost  = $_POST['cost-value'];
 
@@ -41,10 +44,17 @@ if ($itemId == "" || $valuesToChange == "") {
 	return false;
 }
 
-// Set the cost on the item by id
-$sql = "UPDATE items
-$valuesToChange
-WHERE item_id = '$itemId'";
+if ($itemOrCat == "item") {
+	// Set the cost on the item by id
+	$sql = "UPDATE items
+	$valuesToChange
+	WHERE item_id = '$itemId'";
+} elseif ($itemOrCat == "category"){
+	// Set the cost on the item by id
+	$sql = "UPDATE items
+	$valuesToChange
+	WHERE category_id = '$itemId'";
+}
 
 if ($conn->query($sql) === TRUE) {
 	echo "Succesfully updated price / cost.";
